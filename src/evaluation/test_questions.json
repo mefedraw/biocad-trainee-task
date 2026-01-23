@@ -1,0 +1,197 @@
+[
+    {
+      "question": "What are potential targets for Alzheimer's disease treatment?",
+      "relevant_doc_ids": [
+        "1-s2.0-S2211383524004507-main_abstract_00",
+        "1-s2.0-S2211383524004507-main_conclusion_00",
+        "ijms-24-05383_abstract_00",
+        "nihms-594059_abstract_00",
+        "nihms-594059_introduction_00",
+        "TRC2-11-e70098_conclusion_00"
+      ],
+      "category": "targets"
+    },
+    {
+      "question": "Are the targets druggable with small molecules, biologics, or other modalities?",
+      "relevant_doc_ids": [
+        "TRC2-11-e70098_introduction_00",
+        "TRC2-10-e12465_abstract_00",
+        "TRC2-11-e70098_conclusion_01",
+        "2024.06.04.595773v1.full_abstract_00",
+        "2025.04.28.651121v1.full_abstract_00",
+        "2025.10.24.684310v1.full_abstract_00",
+        "fnagi-15-1206572_introduction_01"
+      ],
+      "category": "druggability"
+    },
+    {
+      "question": "What additional studies are needed to advance these targets?",
+      "relevant_doc_ids": [
+        "MD-010-C9MD00337A_conclusion_00",
+        "fnagi-15-1206572_conclusion_00",
+        "2024.06.04.595773v1.full_conclusion_00",
+        "TRC2-11-e70098_conclusion_00"
+      ],
+      "category": "future_studies"
+    },
+    {
+      "question": "What is the role of amyloid beta in Alzheimer's disease?",
+      "relevant_doc_ids": [
+        "ijms-24-05383_abstract_00",
+        "ijms-24-05383_conclusion_04",
+        "2025.04.28.651121v1.full_introduction_01",
+        "2025.04.28.651121v1.full_introduction_02",
+        "nihms-594059_abstract_00",
+        "nihms-594059_introduction_00",
+        "2025.01.09.631584v1.full_introduction_00"
+      ],
+      "category": "mechanism"
+    },
+    {
+      "question": "Which tau protein modifications are associated with Alzheimer's?",
+      "relevant_doc_ids": [
+        "ijms-24-05383_abstract_00",
+        "2025.01.09.631584v1.full_introduction_00",
+        "2025.10.24.684310v1.full_introduction_01",
+        "2025.10.24.684310v1.full_introduction_02"
+      ],
+      "category": "mechanism"
+    },
+    {
+      "question": "Which therapeutic targets are most frequently mentioned across the corpus?",
+      "relevant_doc_ids": [
+        "ijms-24-05383_abstract_00",
+        "nihms-594059_abstract_00",
+        "nihms-594059_introduction_00",
+        "1-s2.0-S2211383524004507-main_abstract_00",
+        "TRC2-11-e70098_conclusion_00"
+      ],
+      "category": "corpus_summary"
+    },
+    {
+      "question": "What non-amyloid targets are proposed as disease-modifying in these papers?",
+      "relevant_doc_ids": [
+        "1-s2.0-S2211383524004507-main_abstract_00",
+        "2024.06.04.595773v1.full_abstract_00",
+        "2025.04.28.651121v1.full_abstract_00",
+        "2025.10.24.684310v1.full_abstract_00",
+        "ijms-24-05383_abstract_00",
+        "2025.01.14.633081v1.full_abstract_00",
+        "s41598-025-88134-w_conclusion_02"
+      ],
+      "category": "targets"
+    },
+    {
+      "question": "Which targets have the strongest evidence (genetic / experimental / clinical) in the provided sources?",
+      "relevant_doc_ids": [
+        "2024.06.04.595773v1.full_abstract_00",
+        "2024.06.04.595773v1.full_conclusion_00",
+        "2025.04.28.651121v1.full_abstract_00",
+        "2025.10.24.684310v1.full_abstract_00",
+        "TRC2-11-e70098_introduction_00",
+        "TRC2-10-e12465_abstract_00",
+        "TRC2-11-e70098_conclusion_01"
+      ],
+      "category": "evidence"
+    },
+    {
+      "question": "What are the main mechanistic pathways linked to these targets (inflammation, lysosome, synapse, tau)?",
+      "relevant_doc_ids": [
+        "2024.06.04.595773v1.full_abstract_00",
+        "2024.06.04.595773v1.full_conclusion_00",
+        "2025.04.28.651121v1.full_abstract_00",
+        "2025.04.28.651121v1.full_introduction_04",
+        "2025.01.09.631584v1.full_abstract_00",
+        "2025.01.09.631584v1.full_introduction_01",
+        "2025.10.24.684310v1.full_introduction_00",
+        "ijms-24-05383_conclusion_02"
+      ],
+      "category": "mechanism"
+    },
+    {
+      "question": "For the listed targets, which are best suited for small molecules vs antibodies vs gene therapy?",
+      "relevant_doc_ids": [
+        "TRC2-11-e70098_introduction_00",
+        "fnagi-15-1206572_introduction_01",
+        "2025.10.24.684310v1.full_abstract_00",
+        "2025.04.28.651121v1.full_abstract_00",
+        "2024.06.04.595773v1.full_abstract_00"
+      ],
+      "category": "druggability"
+    },
+    {
+      "question": "Which targets are extracellular (better for antibodies) vs intracellular (harder, small molecules needed)?",
+      "relevant_doc_ids": [
+        "TRC2-11-e70098_introduction_00",
+        "fnagi-15-1206572_introduction_01",
+        "2024.06.04.595773v1.full_abstract_00",
+        "2025.10.24.684310v1.full_abstract_00",
+        "2025.04.28.651121v1.full_introduction_00"
+      ],
+      "category": "druggability"
+    },
+    {
+      "question": "Are there any repurposable drugs mentioned for these targets? Which ones and why?",
+      "relevant_doc_ids": [
+        "2025.01.14.633081v1.full_introduction_02",
+        "2024.06.04.595773v1.full_abstract_00",
+        "s41598-025-88134-w_conclusion_00",
+        "nihms-594059_conclusion_00"
+      ],
+      "category": "repurposing"
+    },
+    {
+      "question": "What evidence supports TYK2 as an Alzheimer’s target, and what is the proposed mechanism?",
+      "relevant_doc_ids": [
+        "2024.06.04.595773v1.full_abstract_00",
+        "2024.06.04.595773v1.full_conclusion_00"
+      ],
+      "category": "target_specific"
+    },
+    {
+      "question": "How is TREM2 described as a target (activation vs inhibition), and what outcomes are expected?",
+      "relevant_doc_ids": [
+        "1-s2.0-S2211383524004507-main_abstract_00",
+        "1-s2.0-S2211383524004507-main_conclusion_00",
+        "2025.04.28.651121v1.full_introduction_05"
+      ],
+      "category": "target_specific"
+    },
+    {
+      "question": "What roles do IGFBPs play in the proposed Alzheimer’s mechanisms, and which IGFBP is highlighted?",
+      "relevant_doc_ids": [
+        "2025.10.17.683162v1.full_introduction_00",
+        "2025.10.17.683162v1.full_introduction_04",
+        "2025.10.17.683162v1.full_introduction_05"
+      ],
+      "category": "target_specific"
+    },
+    {
+      "question": "Which papers connect lysosomal dysfunction to amyloid or tau pathology, and what target is proposed?",
+      "relevant_doc_ids": [
+        "2025.04.28.651121v1.full_abstract_00",
+        "2025.04.28.651121v1.full_introduction_04",
+        "2025.04.28.651121v1.full_introduction_05",
+        "2025.04.28.651121v1.full_introduction_06"
+      ],
+      "category": "mechanism"
+    },
+    {
+      "question": "What is the rationale for targeting GSK-3β, and what risks or limitations are mentioned?",
+      "relevant_doc_ids": [
+        "2025.10.24.684310v1.full_introduction_00",
+        "2025.10.24.684310v1.full_conclusion_00",
+        "ijms-24-05383_conclusion_00"
+      ],
+      "category": "target_specific"
+    },
+    {
+      "question": "How is G9a positioned as a target, and why is dual inhibition with GSK-3β proposed?",
+      "relevant_doc_ids": [
+        "2025.10.24.684310v1.full_abstract_00",
+        "2025.10.24.684310v1.full_introduction_00",
+        "2025.10.24.684310v1.full_conclusion_00"
+      ],
+      "category": "target_specific"
+    }
+  ]  
