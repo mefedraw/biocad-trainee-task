@@ -83,4 +83,11 @@ CE оптимизирован для ранжирования и поэтому 
 На самом деле я ее выбрал потому что она является бесплатной и соответствует требованиям проекта, возможно для прода понадобится что то другое, хотя как по мне этой модели хватает с головой. Можно также конкретизировать промпт чтобы еще больше стандартизировать вывод, чтобы исследователям было удобно читать ответ и пользоваться системой.
 
 
-Пример ответов и того как выглядит визуализацию с помощью Streamlit
+## Пример ответов и того как выглядит визуализацию с помощью Streamlit
+<img width="1280" height="671" alt="image" src="https://github.com/user-attachments/assets/347cabfd-f923-4c6c-b100-c93d9c89cee6" />
+<img width="1280" height="674" alt="image" src="https://github.com/user-attachments/assets/bc31921b-33e1-4318-9b7c-52e1f2916921" />
+пример невалидного запроса
+<img width="1112" height="397" alt="image" src="https://github.com/user-attachments/assets/329f913e-85b4-43c2-8fdb-3b9d853d8c67" />
+
+## воркфлоу диаграмка
+<img width="834" height="994" alt="image" src="https://github.com/user-attachments/assets/109b0e8a-11fe-498e-aef1-b39823b804a1" />
