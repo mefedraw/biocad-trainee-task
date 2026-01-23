@@ -90,4 +90,6 @@ CE оптимизирован для ранжирования и поэтому 
 <img width="1112" height="397" alt="image" src="https://github.com/user-attachments/assets/329f913e-85b4-43c2-8fdb-3b9d853d8c67" />
 
 ## воркфлоу диаграмка
-<img width="834" height="994" alt="image" src="https://github.com/user-attachments/assets/109b0e8a-11fe-498e-aef1-b39823b804a1" />
+<img width="887" height="1055" alt="image" src="https://github.com/user-attachments/assets/00c0a3ab-0f05-4db8-8740-1fd044011edb" />
+
+
