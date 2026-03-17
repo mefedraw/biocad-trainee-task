@@ -3,9 +3,9 @@ embedding:
   device: "cpu"
 
 chunking:
-  chunk_size: 500
-  chunk_overlap: 100
-  min_chunk_size: 100
+  chunk_size: 400
+  chunk_overlap: 70
+  min_chunk_size: 150
 
 vector_db:
   type: "chroma"
@@ -33,5 +33,5 @@ grobid:
 paths:
   raw_data: "data/raw"
   processed_data: "data"
-  papers_dir: "papers"
+  papers_dir: "data/raw"
   reports_dir: "reports"

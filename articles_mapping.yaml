@@ -2,71 +2,59 @@ articles:
   "1-s2.0-S2211383524004507-main":
     title: "Comprehensive investigation of multiple targets in the development of newer drugs for the Alzheimer's disease"
     url: "https://www.sciencedirect.com/science/article/pii/S2211383524004507"
-  
-  "2024.06.04.595773v1":
-    title: "TYK2 as a novel therapeutic target in Alzheimer's Disease with TDP-43 inclusions"
-    url: "https://www.biorxiv.org/content/10.1101/2024.06.04.595773v1.full.pdf"
-  
+
   "2024.06.04.595773v1.full":
     title: "TYK2 as a novel therapeutic target in Alzheimer's Disease with TDP-43 inclusions"
     url: "https://www.biorxiv.org/content/10.1101/2024.06.04.595773v1.full.pdf"
-  
-  "2025.01.09.631584v1":
-    title: "Integrated Multi-Omics Analyses of Synaptosomes Revealed SynapseCentered Novel Targets in Alzheimer's Disease"
-    url: "https://www.biorxiv.org/content/10.1101/2025.01.09.631584v1.full.pdf"
-  
+
   "2025.01.09.631584v1.full":
     title: "Integrated Multi-Omics Analyses of Synaptosomes Revealed SynapseCentered Novel Targets in Alzheimer's Disease"
     url: "https://www.biorxiv.org/content/10.1101/2025.01.09.631584v1.full.pdf"
-  
-  "2025.04.28.651121v1":
-    title: "Targeting Lysosomal Dysfunction to Alleviate Plaque Deposition in an Alzheimer Disease Model"
-    url: "https://www.biorxiv.org/content/10.1101/2025.04.28.651121v1.full.pdf"
-  
+
   "2025.04.28.651121v1.full":
     title: "Targeting Lysosomal Dysfunction to Alleviate Plaque Deposition in an Alzheimer Disease Model"
     url: "https://www.biorxiv.org/content/10.1101/2025.04.28.651121v1.full.pdf"
-  
-  "2025.10.17.683162v1":
-    title: "Modeling Alzheimer's Disease with APOE4 Neuron-Glial Brain Assembloids Reveals IGFBPs as Therapeutic Targets"
-    url: "https://www.biorxiv.org/content/10.1101/2025.10.17.683162v1.full.pdf"
-  
+
   "2025.10.17.683162v1.full":
     title: "Modeling Alzheimer's Disease with APOE4 Neuron-Glial Brain Assembloids Reveals IGFBPs as Therapeutic Targets"
     url: "https://www.biorxiv.org/content/10.1101/2025.10.17.683162v1.full.pdf"
-  
-  "2025.10.24.684310v1":
-    title: "Dual Inhibitors Targeting G9a and GSK-3β: Translational Perspectives on Alzheimer's Disease Treatment"
-    url: "https://www.biorxiv.org/content/10.1101/2025.10.24.684310v1.full.pdf"
-  
+
   "2025.10.24.684310v1.full":
     title: "Dual Inhibitors Targeting G9a and GSK-3β: Translational Perspectives on Alzheimer's Disease Treatment"
     url: "https://www.biorxiv.org/content/10.1101/2025.10.24.684310v1.full.pdf"
-  
-  "fnagi-15-1206572":
-    title: "New Pathways Identify Novel Drug Targets for the Prevention and Treatment of Alzheimer's Disease"
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10049476/pdf/ijms-24-05383.pdf"
-  
+
   "ijms-24-05383":
     title: "New Pathways Identify Novel Drug Targets for the Prevention and Treatment of Alzheimer's Disease"
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10049476/pdf/ijms-24-05383.pdf"
-  
+
   "TRC2-10-e12465":
     title: "Alzheimer's disease drug development pipeline: 2024"
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11040692/pdf/TRC2-10-e12465.pdf"
-  
+
   "TRC2-11-e70098":
     title: "Alzheimer's disease drug development pipeline: 2025"
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12131090/pdf/TRC2-11-e70098.pdf"
-  
+
   "s41598-025-88134-w":
     title: "Identification of therapeutic targets for Alzheimer's Disease Treatment using bioinformatics and machine learning"
     url: "https://www.nature.com/articles/s41598-025-88134-w"
-  
+
   "MD-010-C9MD00337A":
     title: "Current and emerging therapeutic targets of alzheimer's disease for the design of multi-target directed ligands"
     url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10438465/"
-  
+
   "nihms-594059":
     title: "Novel targets for Alzheimer's disease treatment"
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4140224/"
+
+  "fnagi-15-1206572.pdf":
+    title: "Current and future therapeutic strategies for Alzheimer’s disease: an overview of drug development bottlenecks"
+    url: "https://www.researchgate.net/publication/372898452_Current_and_future_therapeutic_strategies_for_Alzheimer's_disease_an_overview_of_drug_development_bottlenecks"
+
+    "nihms-594059.pdf":
+      title: "Novel targets for Alzheimer's disease treatment"
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10591764"
+
+    "fmed-12-1584411.pdf":
+      title: "Identification of therapeutic targets for Alzheimer’s Disease Treatment using bioinformatics and machine learning"
+      url: "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1584411/full"

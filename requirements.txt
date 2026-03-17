@@ -1,3 +1,4 @@
+gscikit-learn
 grobid-client-python>=0.0.7
 pymupdf>=1.23.0
 beautifulsoup4>=4.12.0

@@ -2,7 +2,7 @@ import sys
 import json
 import re
 from pathlib import Path
-from typing import Dict, Optional, List
+from typing import Dict, List, Optional
 import yaml
 from bs4 import BeautifulSoup
 
@@ -11,7 +11,7 @@ if str(root_dir) not in sys.path:
     sys.path.insert(0, str(root_dir))
 
 
-from grobid_client_python.grobid_client import GrobidClient
+from grobid_client.grobid_client import GrobidClient
 import fitz
 
 
@@ -35,39 +35,85 @@ class TextExtractor:
             return None
         
         result = self.grobid_client.process_pdf(
-            str(pdf_path),
-            "processFulltextDocument",
-            generate_ids=True,
-            consolidate_citations=True
+            service="processFulltextDocument",
+            pdf_file=str(pdf_path),
+            generateIDs=True,
+            consolidate_header=1,
+            consolidate_citations=1,
+            include_raw_citations=False,
+            include_raw_affiliations=False,
+            tei_coordinates=False,
+            segment_sentences=False,
         )
         
-        if result and len(result) > 0:
-            tei_xml = result[0]
-            return self._parse_tei_xml(tei_xml)
+        if result and len(result) == 3:
+            _, status, tei_xml = result
+            if status == 200 and tei_xml:
+                return self._parse_tei_xml(tei_xml)
         
         return None
     
+    SECTION_ALIASES: Dict[str, List[str]] = {
+        "abstract": [
+            "abstract",
+            "structured abstract",
+            "synopsis",
+        ],
+        "introduction": [
+            "introduction",
+            "background",
+            "background and objectives",
+            "background and aims",
+            "overview",
+            "context",
+        ],
+        "conclusion": [
+            "discussion",
+            "conclusions",
+            "conclusion",
+            "discussion and conclusion",
+            "discussion and conclusions",
+            "analysis",
+            "conclusions and outlook",
+            "outlook",
+            "summary",
+        ],
+    }
+
+    def _match_section(self, title: str) -> Optional[str]:
+        title = title.strip().lower()
+        for canonical, aliases in self.SECTION_ALIASES.items():
+            if any(title == alias or title.startswith(alias) for alias in aliases):
+                return canonical
+        return None
+
     def _parse_tei_xml(self, tei_xml: str) -> Dict:
-        
         soup = BeautifulSoup(tei_xml, 'xml')
+
+        # удаляем все ref теги (сноски) до извлечения текста
+        for ref in soup.find_all('ref'):
+            ref.decompose()
+
         sections = {}
-        
+
         abstract_elem = soup.find('abstract')
         if abstract_elem:
             sections['abstract'] = self._clean_text(abstract_elem.get_text())
-        
-        intro_elem = soup.find('div', {'type': 'introduction'})
-        if not intro_elem:
-            intro_elem = soup.find('div', {'type': 'background'})
-        if intro_elem:
-            sections['introduction'] = self._clean_text(intro_elem.get_text())
-        
-        concl_elem = soup.find('div', {'type': 'conclusion'})
-        if not concl_elem:
-            concl_elem = soup.find('div', {'type': 'discussion'})
-        if concl_elem:
-            sections['conclusion'] = self._clean_text(concl_elem.get_text())
-        
+
+        for div in soup.find_all('div'):
+            head = div.find('head')
+            if not head:
+                continue
+            canonical = self._match_section(head.get_text())
+            if not canonical:
+                continue
+            if canonical in sections:
+                continue
+            head.decompose()  # убираем заголовок чтобы не склеивался с текстом
+            text = self._clean_text(div.get_text())
+            if text and len(text) >= 100:
+                sections[canonical] = text
+
         return sections
     
     def extract_with_pymupdf(self, pdf_path: Path) -> Dict:
@@ -144,6 +190,7 @@ class TextExtractor:
         text = re.sub(r'\.{3,}', '...', text)
         text = re.sub(r',{2,}', ',', text)
         
+        text = re.sub(r'\s+\.\s+', '. ', text)  # убираем висячие точки после удалённых ref
         return text.strip()
     
     def process_pdf(self, pdf_path: Path, doc_metadata: Dict) -> Optional[Dict]:
