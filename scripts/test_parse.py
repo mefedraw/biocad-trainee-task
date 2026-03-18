@@ -1,8 +1,6 @@
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
 from src.preprocessing.text_extractor import TextExtractor
 
 pdf_path = Path("data/raw/1-s2.0-S2211383524004507-main.pdf")
@@ -11,7 +9,6 @@ extractor = TextExtractor()
 
 print("=== Trying GROBID ===\n")
 
-# сохраняем сырой TEI XML
 from grobid_client.grobid_client import GrobidClient
 client = GrobidClient(grobid_server='http://localhost:8070')
 _, status, tei_xml = client.process_pdf(

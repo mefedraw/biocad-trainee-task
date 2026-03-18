@@ -5,15 +5,8 @@ from pathlib import Path
 from typing import Dict, List, Optional
 import yaml
 from bs4 import BeautifulSoup
-
-root_dir = Path(__file__).parent.parent.parent
-if str(root_dir) not in sys.path:
-    sys.path.insert(0, str(root_dir))
-
-
 from grobid_client.grobid_client import GrobidClient
 import fitz
-
 
 
 class TextExtractor:    
@@ -90,7 +83,6 @@ class TextExtractor:
     def _parse_tei_xml(self, tei_xml: str) -> Dict:
         soup = BeautifulSoup(tei_xml, 'xml')
 
-        # удаляем все ref теги (сноски) до извлечения текста
         for ref in soup.find_all('ref'):
             ref.decompose()
 
@@ -109,7 +101,7 @@ class TextExtractor:
                 continue
             if canonical in sections:
                 continue
-            head.decompose()  # убираем заголовок чтобы не склеивался с текстом
+            head.decompose()
             text = self._clean_text(div.get_text())
             if text and len(text) >= 100:
                 sections[canonical] = text

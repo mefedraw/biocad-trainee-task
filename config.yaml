@@ -8,13 +8,14 @@ chunking:
   min_chunk_size: 150
 
 vector_db:
-  type: "chroma"
-  persist_directory: "storage/chroma"
+  type: "qdrant"
+  host: "localhost"
+  port: 6333
   collection_name: "alzheimer_targets"
 
 rag:
-  top_k_retrieval: 30
-  top_k_rerank: 8
+  top_k_retrieval: 10
+  top_k_rerank: 4
   rerank_model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
   enable_reranking: true
   max_distance: 1.2

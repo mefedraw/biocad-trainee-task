@@ -1,8 +1,5 @@
 import sys
 from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
 from src.preprocessing.chunking import SectionAwareChunker
 
 
@@ -11,7 +8,12 @@ def main():
     if not input_path.exists():
         return
     
-    chunker = SectionAwareChunker()
+    chunker = SectionAwareChunker(
+    tokenizer_adapter=HuggingFaceTokenizerAdapter(
+        "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext"
+        )
+    )
+    
     chunker.process_documents()
 
 

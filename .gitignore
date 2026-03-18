@@ -13,7 +13,6 @@ ENV/
 .ipynb_checkpoints
 *.ipynb_checkpoints/
 
-data/raw/*
 !data/raw/.gitkeep
 data/clean_docs.jsonl
 data/chunks.jsonl
